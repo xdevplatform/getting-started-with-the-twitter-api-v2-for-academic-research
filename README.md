@@ -32,7 +32,7 @@ This is designed like a 100-level course. If you already gained access to the Ac
 
 This course consists of 8 modules. Use this course as a complete start-to-finish lesson for getting started, or if you already know some of the basics, you can start off on one of the more advanced modules later on in the course.
 
-- [Module 1](https://github.com/sparack/getting-started-with-the-twitter-api-v2-for-academic-research/blob/main/modules/1-introduction-to-the-twitter-api.md):  Learn what theTwitter API v2 is, and see examples of research done with it
+- [Module 1](https://github.com/sparack/getting-started-with-the-twitter-api-v2-for-academic-research/blob/main/modules/1-introduction-to-the-twitter-api.md):  Learn what the Twitter API v2 is, and see examples of research done with it
 - [Module 2](https://github.com/sparack/getting-started-with-the-twitter-api-v2-for-academic-research/blob/main/modules/2-choosing-the-right-product-track.md): Learn how to apply for a Twitter developer account and how to choose the right product track for your project
 - [Module 3](https://github.com/sparack/getting-started-with-the-twitter-api-v2-for-academic-research/blob/main/modules/3-deciding-which-endpoints-to-use.md): Learn how to decide what Twitter API endpoints to use, based on the data you need
 - [Module 4](https://github.com/sparack/getting-started-with-the-twitter-api-v2-for-academic-research/blob/main/modules/4-getting-your-keys-and-token.md): Learn how to get your keys and bearer token from the developer dashboard to start using the Twitter API
