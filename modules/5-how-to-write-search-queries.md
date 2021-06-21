@@ -50,7 +50,8 @@ The conversation ID is the Tweet ID of the main Tweet for which you want all the
 
 **Note:** When AND and OR operators are used in a query or rule, the logical AND is calculated first, then the OR is applied. Also, as shown in the example above, if you want to negate an operator or condition, use a hyphen (-) before the operator. Negation is used to filter out keywords and conditions that you do not want your search query to match on.
 
-*Make sure to use the bearer token from an App connected to a Project on the product track you wish to use, as this will impact the queries and filters you can create.*
+
+## Operator availability and query length
 
 When you use the recent search and full-archive endpoints as part of the Academic Research product track, your query length can be up to 1024 characters. In the Standard product track, you have access to the recent search endpoint and your query length can be up to 512 characters.
 
@@ -60,6 +61,8 @@ See the complete list of operators supported by endpoints:
 
 1. [Recent search and Full-archive search](https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query#availability)
 2. [Filtered stream](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/integrate/build-a-rule#availability)
+
+In your code, make sure to use the bearer token from an App connected to a Project on the product track you wish to use, as this will impact the queries and filters you can create.
 
 Operators that are only available in the academic research product for the recent search, full-archive search and filtered stream endpoints are listed below:
 
