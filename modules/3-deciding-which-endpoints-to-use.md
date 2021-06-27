@@ -70,6 +70,12 @@ You should scope the data you plan to gather by asking questions like:
 
 Check out the initial section in this tutorial on [finding the right data](https://twitterdev.github.io/do_more_with_twitter_data/finding_the_right_data.html#finding-the-right-data), that showcases how you can narrow down your search and scope the data to ensure you have precisely the data you need without the need for having to remove Tweets in post-processing (after you have collected the initial set of Tweets).
 
+You can always refer to this cheat sheet below which shows you the different endpoints to use based on your use-case:
+
+<p align="center">
+  <img src="../cheatsheets/deciding_which_endpoint_to_use.png" alt="Cheat sheet for deciding endpoints to use"/>
+</p>
+
 In the next module, let us look at how we can get out API keys and tokens to connect to the Twitter API.
 
 [![Next](../assets/next.png)](../modules/4-getting-your-keys-and-token.md)
