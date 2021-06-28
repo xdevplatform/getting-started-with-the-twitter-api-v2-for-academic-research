@@ -14,7 +14,7 @@ Here is a recap of the things we learned in this course:
 
 We also looked at code samples in Python and R, that covered various scenarios for getting Tweets using libraries for the Twitter API v2. Though you learned some of the fundamentals of calling the API directly in this course, these libraries and packages can give you a big head start.
 
-Was this course helpful for you? **If you liked this course, please star this repository**. Over time, we will continue to update this course and add new code samples as new endpoints are launched to support academics. We’ll also add 200- and 300-level courses in the future, starting with a course on text analysis using Twitter data.
+Was this course helpful for you? **If you liked this course, please star this repository**. Over time, we will continue to update this course and add new code samples as new endpoints are launched to support academics. We’ll also add 200 and 300 level courses in the future, starting with a course on text analysis using Twitter data.
 
 Stay updated with our future product releases on our [product roadmap](https://t.co/roadmap), or by following us on [@TwitterDev](https://twitter.com/twitterdev).
 
