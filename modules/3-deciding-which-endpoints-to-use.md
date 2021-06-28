@@ -53,7 +53,7 @@ For use-cases around network analysis, you can use the [Follows lookup endpoints
 
 ## A fellow researcher shared a set of Tweet IDs and I want build the Twitter dataset for these Tweet IDs
 
-The [Twitter developer policy](https://developer.twitter.com/en/developer-terms/policy) allows academics to share unlimited Tweet IDs for peer-review. If you have a list of these Tweet IDs and want to build the actual Tweet payload with the Tweet text and other fields, you can use the [Tweet lookup endpoints](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/introduction). You can lookup the Tweets using a single ID or using a list of IDs.
+The [Twitter developer policy](https://developer.twitter.com/en/developer-terms/policy) allows academics to share unlimited Tweet IDs with other academics for non-profit research purposes, such as validating each other’s results. If you have a list of these Tweet IDs and want to build the actual Tweet payload with the Tweet text and other fields, you can use the [Tweet lookup endpoints](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/introduction). You can lookup the Tweets using a single ID or using a list of IDs.
 
 [Learn how to get started with the Tweet Lookup endpoints](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/introduction)
 
