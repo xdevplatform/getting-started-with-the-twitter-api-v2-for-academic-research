@@ -55,7 +55,7 @@ def main():
     # This is where we specify our query as discussed in module 5
     query = "from:twitterdev -is:retweet"
     
-    # The search_all method call the recent search endpoint to get Tweets based on the query, start and end times
+    # The search_recent method call the recent search endpoint to get Tweets based on the query, start and end times
     search_results = client.search_recent(query=query, start_time=start_time, end_time=end_time, max_results=100)
     
     # Twarc returns all Tweets for the criteria set above, so we page through the results
@@ -78,7 +78,41 @@ if __name__ == "__main__":
 - If you do not specify the start_time, the default time period will be 7 days for recent search
 - The **max_results** parameter for the search_all method above tells Twarc how many Tweets to get per request. Twarc will get all the Tweets for the specified time period and query, which can be more than the max_results, because it will make multiple calls in the example above and for each call it will get 100 requests until it gets all Tweets for the time period your specified.
 
-## 2. Building the conversation thread for a Tweet ID (from last 7 days)
+## 2. Getting Tweet volume for Tweets from the last 7 days
+
+In the code below, make sure to specify the **start_time** and **end_time** from the last 7 days, otherwise the code sample will not work
+
+```Python
+def main():
+
+    # Specify the start time in UTC for the time period you want Tweets from
+    start_time = datetime.datetime(2021, 6, 27, 0, 0, 0, 0, datetime.timezone.utc)
+
+    # Specify the end time in UTC for the time period you want Tweets from
+    end_time = datetime.datetime(2021, 6, 28, 0, 0, 0, 0, datetime.timezone.utc)
+
+    # This is where we specify our query as discussed in module 5
+    query = "lakers"
+    
+    # The counts_recent method call the recent Tweet counts endpoint to get Tweets based on the query, start and end times
+        search_results = client.counts_recent(query=query, start_time=start_time, end_time=end_time)
+    
+    # Recent Tweet counts returns all the Tweet volume for the last 7 days in one page so we break after that
+    for page in search_results:
+        print(json.dumps(page['data']))
+        break
+
+
+if __name__ == "__main__":
+    main()
+```
+
+**Note:**
+
+- You can modify the query here by using the operators available for recent search as shown in [module 5](./5-how-to-write-search-queries.md)
+- If you do not specify the start_time, the default time period will be 7 days for recent search
+
+## 3. Building the conversation thread for a Tweet ID (from last 7 days)
 
 This code sample will only get replies for a Tweet from the last 7 days, because it uses the recent search endpoint
 
@@ -107,7 +141,7 @@ if __name__ == "__main__":
 
 **Note:** If you do not specify the start_time, you will only get replies from the last 30 days
 
-## 3. Writing response from recent search to a text file
+## 4. Writing response from recent search to a text file
 
 In the code below, make sure to specify the **start_time** and **end_time** from the last 7 days, otherwise the code sample will not work. Alternatively, you can also remove the start and end time parameters and the code will default to Tweets from the last 7 days.
 
@@ -144,7 +178,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 4. Getting a user's Tweet timeline
+## 5. Getting a user's Tweet timeline
 
 ```Python
 def main():
@@ -167,7 +201,7 @@ if __name__ == "__main__":
 
 **Note:** The timeline function calls the user Tweet timeline endpoint which returns the 3200 most recent public Tweets for a user
 
-## 5. Getting a user's mentions
+## 6. Getting a user's mentions
 
 ```Python
 def main():
@@ -190,7 +224,7 @@ if __name__ == "__main__":
 
 **Note:** The mentions function calls the user mentions endpoint which returns the 3200 most recent public mentions for a user
 
-## 6. Getting a random 1% sample of Tweets in real-time
+## 7. Getting a random 1% sample of Tweets in real-time
 
 ```Python
 def main():
@@ -213,7 +247,7 @@ if __name__ == "__main__":
 
 The sample function in Twarc calls the sampled stream endpoint in the Twitter API v2
 
-## 7. Filtering for Tweets on a topic using filtered-stream
+## 8. Filtering for Tweets on a topic using filtered-stream
 
 In the code sample below:
 
@@ -258,7 +292,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 8. Get followers for a user
+## 9. Get followers for a user
 
 ```Python
 def main():
@@ -275,7 +309,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 9. Get users that a user is following
+## 10. Get users that a user is following
 
 ```Python
 def main():
@@ -292,7 +326,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 10. Lookup Users using User IDs
+## 11. Lookup Users using User IDs
 
 ```Python
 def main():
@@ -311,7 +345,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 11. Lookup Tweets using Tweet IDs
+## 12. Lookup Tweets using Tweet IDs
 
 ```Python
 def main():
@@ -332,7 +366,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 12. Keeping your dataset compliant
+## 13. Keeping your dataset compliant
 
 In this code sample, we will read a file with Tweet IDs, one Tweet ID per line and call the tweet_lookup method. We will compare the Tweet IDs returned from this endpoint with the Tweet IDs in our original dataset. The difference between the 2 will give us the Tweet IDs that are not compliant (e.g. deleted Tweets or from suspended accounts)
 

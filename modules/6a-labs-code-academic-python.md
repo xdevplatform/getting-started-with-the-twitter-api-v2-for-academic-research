@@ -72,11 +72,42 @@ if __name__ == "__main__":
 
 **Note:**
 
+## 2. Get Tweet volume for Tweets older than the last 7 days
+
+```Python
+def main():
+
+    # Specify the start time in UTC for the time period you want Tweets from
+    start_time = datetime.datetime(2021, 1, 1, 0, 0, 0, 0, datetime.timezone.utc)
+
+    # Specify the end time in UTC for the time period you want Tweets from
+    end_time = datetime.datetime(2021, 5, 30, 0, 0, 0, 0, datetime.timezone.utc)
+
+    # This is where we specify our query as discussed in module 5
+    query = "lakers"
+
+    # The counts_all method call the full-archive Tweet counts endpoint to get Tweet volume based on the query, start and end times
+    search_results = client.counts_all(query=query, start_time=start_time, end_time=end_time)
+
+    # Twarc returns all Tweet counts for the criteria set above, so we page through the results
+    for page in search_results:
+        print(json.dumps(page))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+**Note:**
+
+- You can modify the query here by using the operators available for full-archive search as shown in [module 5](./5-how-to-write-search-queries.md)
+- If you do not specify the start_time, the default time period will be 30 days for full-archive search
+
 - You can modify the query here by using the operators available for full-archive search as shown in [module 5](./5-how-to-write-search-queries.md)
 - If you do not specify the start_time, the default time period will be 30 days for full-archive search
 - The **max_results** parameter for the search_all method above tells Twarc how many Tweets to get per request. Twarc will get all the Tweets for the specified time period and query, which can be more than the max_results, because it will make multiple calls in the example above and for each call it will get 100 requests until it gets all Tweets for the time period your specified.
 
-## 2. Building the entire conversation thread for a Tweet ID
+## 3. Building the entire conversation thread for a Tweet ID
 
 ```Python
 def main():
@@ -106,7 +137,7 @@ if __name__ == "__main__":
 
 **Note:** If you do not specify the start_time, you will only get replies from the last 30 days
 
-## 3. Writing response from full-archive search to a text file
+## 4. Writing response from full-archive search to a text file
 
 ```Python
 def main():
@@ -141,7 +172,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 4. Getting a user's Tweet timeline
+## 5. Getting a user's Tweet timeline
 
 ```Python
 def main():
@@ -164,7 +195,7 @@ if __name__ == "__main__":
 
 **Note:** The timeline function calls the user Tweet timeline endpoint which returns the 3200 most recent public Tweets for a user
 
-## 5. Getting a user's mentions
+## 6. Getting a user's mentions
 
 ```Python
 def main():
@@ -187,7 +218,7 @@ if __name__ == "__main__":
 
 **Note:** The mentions function calls the user mentions endpoint which returns the 3200 most recent public mentions for a user
 
-## 6. Getting a random 1% sample of Tweets in real-time
+## 7. Getting a random 1% sample of Tweets in real-time
 
 ```Python
 def main():
@@ -210,7 +241,7 @@ if __name__ == "__main__":
 
 The sample function in Twarc calls the sampled stream endpoint in the Twitter API v2
 
-## 7. Filtering for Tweets on a topic using filtered-stream
+## 8. Filtering for Tweets on a topic using filtered-stream
 
 In the code sample below:
 
@@ -255,7 +286,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 8. Get followers for a user
+## 9. Get followers for a user
 
 ```Python
 def main():
@@ -272,7 +303,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 9. Get users that a user is following
+## 10. Get users that a user is following
 
 ```Python
 def main():
@@ -289,7 +320,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 10. Lookup Users using User IDs
+## 11. Lookup Users using User IDs
 
 ```Python
 def main():
@@ -308,7 +339,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 11. Lookup Tweets using Tweet IDs
+## 12. Lookup Tweets using Tweet IDs
 
 ```Python
 def main():
@@ -329,7 +360,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 12. Keeping your dataset compliant
+## 13. Keeping your dataset compliant
 
 In this code sample, we will read a file with Tweet IDs, one Tweet ID per line and call the tweet_lookup method. We will compare the Tweet IDs returned from this endpoint with the Tweet IDs in our original dataset. The difference between the 2 will give us the Tweet IDs that are not compliant (e.g. deleted Tweets or from suspended accounts)
 
