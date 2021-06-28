@@ -42,8 +42,15 @@ Once you have initialized the client, and imported the expansions class and the 
 ## 1. Searching for Tweets older than the last 7 days
 
 ```Python
-def main():
+from twarc import Twarc2, expansions
+import datetime
+import json
 
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
+def main():
     # Specify the start time in UTC for the time period you want Tweets from
     start_time = datetime.datetime(2021, 1, 1, 0, 0, 0, 0, datetime.timezone.utc)
 
@@ -52,10 +59,10 @@ def main():
 
     # This is where we specify our query as discussed in module 5
     query = "from:twitterdev -is:retweet"
-    
+
     # The search_all method call the full-archive search endpoint to get Tweets based on the query, start and end times
     search_results = client.search_all(query=query, start_time=start_time, end_time=end_time, max_results=100)
-    
+
     # Twarc returns all Tweets for the criteria set above, so we page through the results
     for page in search_results:
         # The Twitter API v2 returns the Tweet information and the user, media etc.  separately
@@ -68,15 +75,29 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
 
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/full_archive_search.py)
+
 **Note:**
+
+- You can modify the query here by using the operators available for full-archive search as shown in [module 5](./5-how-to-write-search-queries.md)
+- If you do not specify the start_time, the default time period will be 30 days for full-archive search
+- The **max_results** parameter for the search_all method above tells Twarc how many Tweets to get per request. Twarc will get all the Tweets for the specified time period and query, which can be more than the max_results, because it will make multiple calls in the example above and for each call it will get 100 requests until it gets all Tweets for the time period your specified.
 
 ## 2. Get Tweet volume for Tweets older than the last 7 days
 
 ```Python
-def main():
+from twarc import Twarc2
+import datetime
+import json
 
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
+def main():
     # Specify the start time in UTC for the time period you want Tweets from
     start_time = datetime.datetime(2021, 1, 1, 0, 0, 0, 0, datetime.timezone.utc)
 
@@ -87,40 +108,46 @@ def main():
     query = "lakers"
 
     # The counts_all method call the full-archive Tweet counts endpoint to get Tweet volume based on the query, start and end times
-    search_results = client.counts_all(query=query, start_time=start_time, end_time=end_time)
+    count_results = client.counts_all(query=query, start_time=start_time, end_time=end_time)
 
     # Twarc returns all Tweet counts for the criteria set above, so we page through the results
-    for page in search_results:
+    for page in count_results:
         print(json.dumps(page))
 
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/full_archive_tweet_counts.py)
 
 **Note:**
 
 - You can modify the query here by using the operators available for full-archive search as shown in [module 5](./5-how-to-write-search-queries.md)
 - If you do not specify the start_time, the default time period will be 30 days for full-archive search
 
-- You can modify the query here by using the operators available for full-archive search as shown in [module 5](./5-how-to-write-search-queries.md)
-- If you do not specify the start_time, the default time period will be 30 days for full-archive search
-- The **max_results** parameter for the search_all method above tells Twarc how many Tweets to get per request. Twarc will get all the Tweets for the specified time period and query, which can be more than the max_results, because it will make multiple calls in the example above and for each call it will get 100 requests until it gets all Tweets for the time period your specified.
-
 ## 3. Building the entire conversation thread for a Tweet ID
 
 ```Python
+from twarc import Twarc2, expansions
+import datetime
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
-    
     # Specify the start time in UTC for the time period you want replies from
     start_time = datetime.datetime(2021, 6, 12, 0, 0, 0, 0, datetime.timezone.utc)
 
     # Specify the Tweet ID for which you want the conversation thread
     query = "conversation_id:1403738886275096605"
-    
+
     # The search_all method call the full-archive search endpoint to get the Tweets (replies) for the conversation 
     search_results = client.search_all(query=query, start_time=start_time, max_results=100)
-    
+
     # Twarc returns all Tweets for the criteria set above, so we page through the results
     for page in search_results:
         # The Twitter API v2 returns the Tweet information and the user, media etc.  separately
@@ -133,15 +160,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/conversation_thread.py)
 
 **Note:** If you do not specify the start_time, you will only get replies from the last 30 days
 
 ## 4. Writing response from full-archive search to a text file
 
 ```Python
-def main():
+from twarc import Twarc2, expansions
+import datetime
+import json
 
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
+def main():
     # Specify the start time in UTC for the time period you want replies from
     start_time = datetime.datetime(2021, 1, 1, 0, 0, 0, 0, datetime.timezone.utc)
 
@@ -170,11 +207,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/full_archive_search_to_txt_file.py)
 
 ## 5. Getting a user's Tweet timeline
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # This timeline functions gets the Tweet timeline for a specified user
     user_timeline = client.timeline(user="twitterdev")
@@ -191,13 +238,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/user_tweet_timeline.py)
 
 **Note:** The timeline function calls the user Tweet timeline endpoint which returns the 3200 most recent public Tweets for a user
 
 ## 6. Getting a user's mentions
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # This mentions functions gets the mentions for a specified user
     user_mentions = client.mentions(user="twitterdev")
@@ -214,13 +271,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/user_mentions.py)
 
 **Note:** The mentions function calls the user mentions endpoint which returns the 3200 most recent public mentions for a user
 
 ## 7. Getting a random 1% sample of Tweets in real-time
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # The sample method gives a 1% random sample of all Tweets
     for count, result in enumerate(client.sample()):
@@ -237,9 +304,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
 
-The sample function in Twarc calls the sampled stream endpoint in the Twitter API v2
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/stream_sampled.py)
 
 ## 8. Filtering for Tweets on a topic using filtered-stream
 
@@ -251,6 +319,13 @@ In the code sample below:
 - Finally, when we have the desired number of Tweets collected, then we delete those rules using **delete_stream_rule_ids**
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # Remove existing rules
     existing_rules = client.get_stream_rules()
@@ -284,11 +359,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/stream_filtered.py)
 
 ## 9. Get followers for a user
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # The followers function gets followers for specified user
     followers = client.followers(user="twitterdev")
@@ -301,11 +386,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/get_followers.py)
 
 ## 10. Get users that a user is following
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # The following function gets users that the specified user follows
     following = client.following(user="twitterdev")
@@ -318,11 +413,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/get_following.py)
 
 ## 11. Lookup Users using User IDs
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # List of user IDs to lookup, add the ones you would like to lookup
     users = ['2244994945', '783214', '6253282']
@@ -337,11 +442,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/user_lookup.py)
 
 ## 12. Lookup Tweets using Tweet IDs
 
 ```Python
+from twarc import Twarc2, expansions
+import json
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # List of Tweet IDs you want to lookup
     tweet_ids = ['1404192093803741184', '1403738886275096605', '1397216898593525762']
@@ -358,19 +473,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/tweets_lookup.py)
 
 ## 13. Keeping your dataset compliant
 
 In this code sample, we will read a file with Tweet IDs, one Tweet ID per line and call the tweet_lookup method. We will compare the Tweet IDs returned from this endpoint with the Tweet IDs in our original dataset. The difference between the 2 will give us the Tweet IDs that are not compliant (e.g. deleted Tweets or from suspended accounts)
 
 ```Python
+from twarc import Twarc2, expansions
+
+# Replace your bearer token below
+client = Twarc2(bearer_token="XXXXX")
+
+
 def main():
     # Path and name of file that contains the Tweet IDs, one Tweet ID per line
     read_path = 'ids.txt'
 
     compliant_tweet_ids = []
-    
+
     with open(read_path) as f:
         all_tweet_ids = f.read().splitlines()
     # The tweet_lookup function will look up Tweets with the specified ids
@@ -379,7 +503,7 @@ def main():
         result = expansions.flatten(page)
         for tweet in result:
             compliant_tweet_ids.append(tweet['id'])
-    # Here we get a difference betweetn the original 
+    # Here we get a difference betweetn the original
     non_compliant_tweet_ids = list(set(all_tweet_ids) - set(compliant_tweet_ids))
     # Here we are printing the list of Tweet IDs that are not compliant in your dataset
     print(non_compliant_tweet_ids)
@@ -387,7 +511,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
+
+The source code for this sample can be found [here](../labs-code/python/academic-research-product-track/compliance.py)
 
 So this concludes the labs in Python for the academic research product track. In the next section, let us take a look at some additional information and best practices around storing Twitter data and how you can keep you dataset in compliance with Twitter's developer policy.
 
