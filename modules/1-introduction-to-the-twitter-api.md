@@ -2,7 +2,7 @@
 
 ![banner](../assets/banner.png)
 
-Twitter is a platform that is used by people across the world to exchange thoughts, ideas and information with one another, using Tweets. Each Tweet consists of up to 240 characters and may include media such as links, images and videos. In the context of research, Twitter data refers to the public information that is provided via Twitter’s application programming interface (API). The API supports various endpoints such as recent search, filtered steam etc. that let developers and researchers connect to the API and request Twitter data.
+Twitter is a platform that is used by people across the world to exchange thoughts, ideas and information with one another, using Tweets. Each Tweet consists of up to 280 characters and may include media such as links, images and videos. In the context of research, Twitter data refers to the public information that is provided via Twitter’s application programming interface (API). The API supports various endpoints such as recent search, filtered steam etc. that let developers and researchers connect to the API and request Twitter data.
 
 *Not sure what an API is and want to learn more? Check out this [appendix](./0-appendix.md) section to learn more.*
 
