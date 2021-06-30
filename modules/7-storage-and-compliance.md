@@ -6,7 +6,7 @@ Now that you know how to get the Twitter data you need, what do you do with it a
 
 ## Methods for storing Twitter data
 
-When you use the Twitter API, the response is in JSON format. You may want to save this data first, and read it later for your analysis. To save this data, you can write each JSON object to a newline in a file (in your code) and then once the file has a desired number of Tweets (per file), you can save that file to the desired destination. Some libraries also allow you to convert this JSON data to CSV (to be saved as csv files). The labs in module 6 above include some examples of writing Tweets to a file.
+When you use the Twitter API, the response is in JSON format. You may want to save this data first, and read it later for your analysis. To save this data, you can write each JSON object to a newline in a file (in your code) and then once the file has a desired number of Tweets (per file), you can save that file to the desired destination. Some libraries also allow you to convert this JSON data to CSV (to be saved as csv files). The labs in [module 6](https://github.com/twitterdev/getting-started-with-the-twitter-api-v2-for-academic-research/blob/main/modules/6-labs-code-samples.md) above include some examples of writing Tweets to a file.
 
 ## Some additional examples of how researchers store this data include:
 
