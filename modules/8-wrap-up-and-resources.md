@@ -2,7 +2,7 @@
 
 ![banner](../assets/banner.png)
 
-Congratulations! You have now completed this 101 course on getting started with teh Twitter API v2 for academic research. If you were able to complete Modules 1-7, you are ahead of the game. 🎉
+Congratulations! You have now completed this 101 course on getting started with the Twitter API v2 for academic research. If you were able to complete Modules 1-7, you are ahead of the game. 🎉
 
 Here is a recap of the things we learned in this course:
 
