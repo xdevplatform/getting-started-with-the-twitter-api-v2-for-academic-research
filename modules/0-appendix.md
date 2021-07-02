@@ -15,15 +15,15 @@ In the context of the Twitter API, when you want to request Tweets from Twitter,
 
 ## Installing Python
 
-Checkout [this tutorial](https://realpython.com/installing-python/) that explains how to install Python on your computer
+Checkout [this tutorial](https://realpython.com/installing-python/) that explains how to install Python on your computer.
 
 ## Introductory course for Python
 
-Here is a [list of beginners guides](https://wiki.python.org/moin/BeginnersGuide/Programmers) for Python
+Here is a [list of beginners guides](https://wiki.python.org/moin/BeginnersGuide/Programmers) for Python.
 
 ## Installing R and introductory course on R
 
-Check out [this guide](https://rstudio-education.github.io/hopr/starting.html) that explains how to install R and Rstudio on your computer and provides an introduction to getting started in R
+Check out [this guide](https://rstudio-education.github.io/hopr/starting.html) that explains how to install R and Rstudio on your computer and provides an introduction to getting started in R.
 
 ## Endpoint
 
@@ -62,7 +62,7 @@ Every day many thousands of developers make requests to the Twitter developer pl
 
 ## Search query
 
-In order to get data from the Twitter API using search endpoints (recent search and full-archive search), you have to specify the kind of data you are looking for. In order to describe this data, you need to write a search query that consists of operators (described below)
+In order to get data from the Twitter API using search endpoints (recent search and full-archive search), you have to specify the kind of data you are looking for. In order to describe this data, you need to write a search query that consists of operators (described below).
 
 ## Rules
 
@@ -86,7 +86,7 @@ Conversation thread refers to the full conversation from a Tweet including all t
 
 ## Apps
 
-[Apps](https://developer.twitter.com/en/docs/apps/overview) are placeholders for your keys and [tokens](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens), that you need in order to connect to the Twitter API
+[Apps](https://developer.twitter.com/en/docs/apps/overview) are placeholders for your keys and [tokens](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens), that you need in order to connect to the Twitter API.
 
 ## Tweet cap
 
@@ -114,11 +114,11 @@ Historical data refers to the Tweets from the past and are obtained from endpoin
 
 ## Follower graph
 
-The follower graph refers to the network and relationship of users on Twitter
+The follower graph refers to the network and relationship of users on Twitter.
 
 ## Text mining
 
-It refers to the the process of deriving analytics and insights from Text
+It refers to the the process of deriving analytics and insights from Text.
 
 ## Named entity-recognition
 
