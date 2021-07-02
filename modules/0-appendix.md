@@ -15,7 +15,7 @@ In the context of the Twitter API, when you want to request Tweets from Twitter,
 
 ## Installing Python
 
-Checkout [this tutorial](https://realpython.com/installing-python/) that explains how to install Python on your computer
+Check out [this tutorial](https://realpython.com/installing-python/) that explains how to install Python on your computer
 
 ## Introductory course for Python
 
