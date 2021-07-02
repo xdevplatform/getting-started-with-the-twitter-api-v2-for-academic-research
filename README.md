@@ -2,7 +2,7 @@
 
 ![banner](./assets/banner.png)
 
-Welcome to this '101 course' on getting started with academic research using the Twitter API. The objective of this course is to help academic researchers learn how to get Twitter data using the new Twitter API v2.
+Welcome to this '101 course' on getting started with academic research using the Twitter API. The objective of this course is to help academic researchers learn how to get Twitter data using Twitter API v2.
 
 ## By the end of this course, you will learn:
 
