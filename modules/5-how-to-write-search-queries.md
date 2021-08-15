@@ -55,7 +55,7 @@ The conversation ID is the Tweet ID of the main Tweet for which you want all the
 
 When you use the recent search and full-archive endpoints as part of the Academic Research product track, your query length can be up to 1024 characters. In the Standard product track, you have access to the recent search endpoint and your query length can be up to 512 characters.
 
-When you use the filtered stream endpoint as part of the Academic Research product track , you can set up to 1000 concurrent rules and each rule can be 1024 characters long.n the Standard product track, you can set 25 concurrent rules and each rule is 512 characters long.
+When you use the filtered stream endpoint as part of the Academic Research product track , you can set up to 1000 concurrent rules and each rule can be 1024 characters long. In the Standard product track, you can set 25 concurrent rules and each rule is 512 characters long.
 
 See the complete list of operators supported by endpoints:
 
