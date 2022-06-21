@@ -15,7 +15,7 @@ Also, make sure you have your bearer token from an app connected to your academi
 In order to install the academicTwitteR package, in your terminal, run the following:
 
 ```bash
-install.packages("academicTwitteR")
+install.packages("academictwitteR")
 ```
 
 ## Importing the academicTwitteR package
