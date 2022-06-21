@@ -115,10 +115,10 @@ def main():
     count_results = client.counts_recent(query=query, start_time=start_time, end_time=end_time)
 
 
-# Recent Tweet counts returns all the Tweet volume for the last 7 days in one page so we break after that
-for page in count_results:
-    print(json.dumps(page['data']))
-    break
+    # Recent Tweet counts returns all the Tweet volume for the last 7 days in one page so we break after that
+    for page in count_results:
+        print(json.dumps(page['data']))
+        break
 
 if __name__ == "__main__":
     main()
