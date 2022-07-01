@@ -18,7 +18,7 @@ It is ideal for undergraduate or high school students who want to use Twitter da
 
 These are just some examples of what you can get from the standard product track, relevant to academics. For a complete list of available endpoints, check out the [Twitter API documentation](https://developer.twitter.com/en/docs/twitter-api).
 
-Currently, you can get upto 500,000 Tweets per month using the standard product track and this limit does not apply to the sampled stream endpoint, which gives a 1% sample of public Tweets in real-time
+Currently, you can get up to 500,000 Tweets per month using the standard product track and this limit does not apply to the sampled stream endpoint, which gives a 1% sample of public Tweets in real-time
 
 ## Academic Research product track
 
