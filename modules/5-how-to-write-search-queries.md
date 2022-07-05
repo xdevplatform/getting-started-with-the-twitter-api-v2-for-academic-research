@@ -30,6 +30,14 @@ The logical AND between corona and coronavirus will be applied first followed by
 
 The is:retweet operator filters for only those Tweets that are retweets and the ‘-’ indicates negation of this condition
 
+## Give me all tweets of some different accounts
+
+`(from:TwitterDev OR from:DevTwitter OR from:AnotherUser)`
+
+It will be used with other queries like this:
+
+`has:geo (from:TwitterDev OR from:DevTwitter OR from:AnotherUser) -is:retweet`
+
 ## Give me all Tweets that contain the word covid-19 and have geo data associated with them
 
 `covid-19 has:geo`
@@ -87,6 +95,8 @@ You can always refer to this cheat sheet below with examples of operators and ho
 </p>
 
 For best practices and detailed examples, check out our comprehensive [guide on building high quality filters to get Tweets](https://developer.twitter.com/content/developer-twitter/en/docs/tutorials/building-high-quality-filters).
+
+Twitter building query document will be helpful: [Building queries for Search Tweets](https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query)
 
 In the next module, we will look at code samples for getting Tweets using the [academicTwitteR](https://cran.r-project.org/web/packages/academictwitteR/index.html) package in R and the [twarc](https://github.com/DocNow/twarc) library in Python.
 
