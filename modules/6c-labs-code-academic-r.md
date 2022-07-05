@@ -26,8 +26,8 @@ In all of the code samples, you will first need to load the academicTwitteR libr
 # This will load the academicTwitteR package
 library(academictwitteR)
 
-# Set your own bearer token (replace the XXXXX with your own bearer token)
-bearer_token <- "XXXXX"
+# Set your own bearer token 
+set_bearer() # follow the on-screen instructions to save your bearer token in .Renviron as an environment variable: TWITTER_BEARER=XXXXXX; and restart R.
 ```
 
 These two lines above will remain the same for all the code examples.
@@ -38,10 +38,9 @@ The get_all_tweets function in academicTwitteR get Tweets from the full archive 
 
 ```R
 tweets <-
-  get_all_tweets("from:twitterdev",
-                 "2021-01-01T00:00:00Z",
-                 "2021-05-31T00:00:00Z",
-                 bearer_token)
+  get_all_tweets(query = "from:twitterdev",
+                 start_tweets = "2021-01-01T00:00:00Z",
+                 end_tweets = "2021-05-31T00:00:00Z")
 
 View(tweets$text)
 ```
@@ -61,10 +60,9 @@ If you want to get Tweets from the full-archive, and want to save it for use lat
 
 ```R
 tweets <-
-  get_all_tweets("from:twitterdev",
-                 "2021-01-01T00:00:00Z",
-                 "2021-05-31T00:00:00Z",
-                 bearer_token,
+  get_all_tweets(query = "from:twitterdev",
+                 start_tweets = "2021-01-01T00:00:00Z",
+                 end_tweets = "2021-05-31T00:00:00Z",
                  data_path = "data/",
                  bind_tweets = FALSE)
 ```
@@ -77,10 +75,9 @@ In the code below, replace the Tweet ID with an ID of your choice to get replies
 tweets <-
   get_all_tweets(
     # Replace with Tweet ID of your choice to get replies
-    "conversation_id:1403738886275096605",
-    "2021-01-01T00:00:00Z",
-    "2021-06-14T00:00:00Z",
-    bearer_token
+    query = "conversation_id:1403738886275096605",
+    start_tweets = "2021-01-01T00:00:00Z",
+    end_tweets = "2021-06-14T00:00:00Z"
   )
 
 View(tweets$text)
@@ -95,10 +92,10 @@ The `has:geo` operator gives you Tweets that have geo information associated wit
 ```R
 tweets <-
   get_all_tweets(
-    "covid-19 has:geo",
-    "2021-01-01T01:00:00Z",
-    "2021-01-01T02:00:00Z",
-    bearer_token)
+    query = "covid-19 has:geo",
+    start_tweets = "2021-01-01T01:00:00Z",
+    end_tweets = "2021-01-01T02:00:00Z"
+    )
 
 View(tweets)
 ```
@@ -115,8 +112,8 @@ user_ids <- c("2244994945", "6253282")
 
 users <-
   get_user_profile(
-    user_ids,
-    bearer_token)
+    x = user_ids
+    )
 
 View(users)
 ```
