@@ -71,55 +71,55 @@ The Client ID and Client Secret in Postman's Auth helper will point to the Envir
 Select the `Run in Postman` button for each of the use cases below to see their documentation within Postman.
 >1. "I want to get Tweets about something that happened this past week."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-001fc873-6cab-47c0-8752-39d13c4e44e6?action=collection%2Ffork&collection-url=entityId%3D21506762-001fc873-6cab-47c0-8752-39d13c4e44e6%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >2. "I want to build the entire conversation thread for a Tweet including replies."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-85393966-5be2-4f7f-9138-1d1470a8da8b?action=collection%2Ffork&collection-url=entityId%3D21506762-85393966-5be2-4f7f-9138-1d1470a8da8b%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >3. "I want to get Tweets from a user’s timeline."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-ffa24aa6-7115-42ae-aa3e-592b4b1a7f00?action=collection%2Ffork&collection-url=entityId%3D21506762-ffa24aa6-7115-42ae-aa3e-592b4b1a7f00%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >4. "I want to write a response from a recent search to a text file."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-26dcebf8-fd59-4f75-8ff8-944aa4287a5d?action=collection%2Ffork&collection-url=entityId%3D21506762-26dcebf8-fd59-4f75-8ff8-944aa4287a5d%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >5. "I want to get a user's tweet timeline."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-6a998e2f-71fd-4ebe-969c-65860d84c391?action=collection%2Ffork&collection-url=entityId%3D21506762-6a998e2f-71fd-4ebe-969c-65860d84c391%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >6. "I want to get a user's mentions."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-4dd7d934-58e8-4a43-8670-b849b76a5ea1?action=collection%2Ffork&collection-url=entityId%3D21506762-4dd7d934-58e8-4a43-8670-b849b76a5ea1%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >7. "I want to collect tweets in real time."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-50a40abc-539e-4561-b401-d6b348d61859?action=collection%2Ffork&collection-url=entityId%3D21506762-50a40abc-539e-4561-b401-d6b348d61859%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >8. "I want to collect Tweets in real-time on a breaking event."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-b39cff2b-e048-4583-87a0-0e086f82d133?action=collection%2Ffork&collection-url=entityId%3D21506762-b39cff2b-e048-4583-87a0-0e086f82d133%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >9. "I want to get the followers for a user."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-7b277681-5fc3-4c2e-a1e2-41f052710833?action=collection%2Ffork&collection-url=entityId%3D21506762-7b277681-5fc3-4c2e-a1e2-41f052710833%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)`
 
 >10. "I want to get the users that a UserID is following."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-ff9cc83e-3447-491c-8338-ff5d82d2d779?action=collection%2Ffork&collection-url=entityId%3D21506762-ff9cc83e-3447-491c-8338-ff5d82d2d779%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >11. "I want to lookup users using User IDs."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-ebcfeca9-95bc-4028-b832-12cc97d0ded3?action=collection%2Ffork&collection-url=entityId%3D21506762-ebcfeca9-95bc-4028-b832-12cc97d0ded3%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >12. "A fellow researcher shared a set of Tweet IDs and I want build the Twitter dataset for these Tweet IDs."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-50a97d2a-0fa4-4811-8281-ceb9697e8c45?action=collection%2Ffork&collection-url=entityId%3D21506762-50a97d2a-0fa4-4811-8281-ceb9697e8c45%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 >13. "I want to keep my dataset compliant."
 
-` insert Run in Postman button when workspace is made Public `
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-f6fe4cce-0d5f-4c39-a8eb-3e9fbc008cfa?action=collection%2Ffork&collection-url=entityId%3D21506762-f6fe4cce-0d5f-4c39-a8eb-3e9fbc008cfa%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
 # Learn more and get certified through Postman Student Programs
 
