@@ -23,7 +23,7 @@ To accomplish a successful fork in Postman, select the horizontal ellipses (or [
 
 For more information on Forking in Postman, see our [learning center documentation](https://learning.postman.com/docs/collaborating-in-postman/version-control/#forking-postman-entities).
 
-<center> <img width=70% border-width=3px src=https://user-images.githubusercontent.com/60015240/187228316-b96f5316-3dad-4b9d-9c34-d219a5959396.gif> </center>
+<p align="center"> <img width=70% border-width=3px border-color="black" src=https://user-images.githubusercontent.com/60015240/187228316-b96f5316-3dad-4b9d-9c34-d219a5959396.gif> </p>
 
 ## Set up Authorization 
 
@@ -33,9 +33,9 @@ You have the option to set up Auth at the **Request** or **Collection** level in
 
 For some Twitter API V2 endpoints, a Bearer Token is all that's needed and will be provided to developers who have set up a project and app in Twitter's [developer portal](developer.twitter.com). In this case, you can set Authorization at the collection level to Bearer Token and insert the token provided by twitter by hard-coding it where you see `{{bearer_token}}` or by assigning the `bearer_token` variable in the Variables tab at the same collection level. 
 
-<center> <img width=70% border-width=3px src="https://content.pstmn.io/75b06b8c-0c05-4eb5-97f8-232f135f5508/QXVnLTI2LTIwMjIgMTMtNTQtMTEuZ2lm" alt="">
+<p align="center"> <img width=70% border-width=3px border-color="black" src="https://content.pstmn.io/75b06b8c-0c05-4eb5-97f8-232f135f5508/QXVnLTI2LTIwMjIgMTMtNTQtMTEuZ2lm" alt=""> </p>
 
-<img width=70% border-width=3px src=https://user-images.githubusercontent.com/60015240/191787830-9ac86159-3ebb-452f-9e88-9b3c80634d49.png> </center>
+<p align="center"> <img width=70% border-width=3px border-color="black" src=https://user-images.githubusercontent.com/60015240/191787830-9ac86159-3ebb-452f-9e88-9b3c80634d49.png> </p>
 
 # Use Cases
 Select the `Run in Postman` button to run a collection which contains all of the use cases below in order to see their documentation within Postman and practice making API calls to the Twitter API.
@@ -75,4 +75,4 @@ If you're a student or educator learning or teaching APIs, the Postman student p
 
 Find out more about Postman Student Programs [here](https://www.postman.com/student-program/) and check out our Student Expert training [here](https://www.postman.com/student-program/#student-expert-program).
 
-<center><img width="40%" alt="Student (2)" src="https://user-images.githubusercontent.com/60015240/191765935-22599ee6-c1c5-4652-bdd9-96592a0f6879.png"></center>
+<p align="center"><img width="40%" alt="Student hero image" src="https://user-images.githubusercontent.com/60015240/191765935-22599ee6-c1c5-4652-bdd9-96592a0f6879.png"></p>
