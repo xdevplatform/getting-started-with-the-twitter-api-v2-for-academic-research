@@ -1,6 +1,6 @@
 # Module 6D: Getting Started with Postman
 
-![banner](https://user-images.githubusercontent.com/60015240/191588591-935e18ca-bf11-4cf0-a45a-39facb6b77a6.png)
+<img width=100% src=https://user-images.githubusercontent.com/60015240/191588591-935e18ca-bf11-4cf0-a45a-39facb6b77a6.png>
 
 # What is Postman
 
@@ -21,17 +21,21 @@ In order to follow along, please fork the Twitter API V2 [collection](https://ww
 
 To accomplish a successful fork in Postman, select the horizontal ellipses (or [Meatballs](https://uxplanet.org/choose-correct-menu-icon-for-your-navigation-7ffc22df80ac)) menu on the collection, select **Create a Fork**, and provide details about the destination workspace.
 
-![forkTwitterColl](https://user-images.githubusercontent.com/60015240/187228316-b96f5316-3dad-4b9d-9c34-d219a5959396.gif)
+For more information on Forking in Postman, see our [learning center documentation](https://learning.postman.com/docs/collaborating-in-postman/version-control/#forking-postman-entities).
+
+<center> <img width=70% border-width=3px src=https://user-images.githubusercontent.com/60015240/187228316-b96f5316-3dad-4b9d-9c34-d219a5959396.gif> </center>
 
 ## Set up Authorization 
 
-You have the option to set up Auth at the **Request** or **Collection** level in Postman, based on your needs. In the [Postman collection](https://www.postman.com/the-student-programs-team/workspace/twitter-learning-modules-in-postman/collection/21506762-d6778526-c8a7-4a88-8f01-da54d4926c05?action=share&creator=21506762) which you can fork, authorization is set to Bearer Token at the collection level. Be sure to assign the `{{bearer_token}}` variable in order to authorize the requests within the collection.
+You have the option to set up Auth at the **Request** or **Collection** level in Postman, based on your needs. In the [Postman collection](https://www.postman.com/the-student-programs-team/workspace/twitter-learning-modules-in-postman/collection/21506762-d6778526-c8a7-4a88-8f01-da54d4926c05?action=share&creator=21506762) which you can fork, authorization is set to Bearer Token at the collection level. Be sure to assign the `{{bearer_token}}` variable in order to authorize the requests within the collection. 
 
 ### Bearer Token
 
-For some Twitter API V2 endpoints, a Bearer Token is all that's needed and will be provided to developers who have set up a project and app in Twitter's [developer portal](developer.twitter.com). In this case, you can set Authorization to Bearer Token and insert the token provided by twitter. 
+For some Twitter API V2 endpoints, a Bearer Token is all that's needed and will be provided to developers who have set up a project and app in Twitter's [developer portal](developer.twitter.com). In this case, you can set Authorization at the collection level to Bearer Token and insert the token provided by twitter by hard-coding it where you see `{{bearer_token}}` or by assigning the `bearer_token` variable in the Variables tab at the same collection level. 
 
-<img src="https://content.pstmn.io/75b06b8c-0c05-4eb5-97f8-232f135f5508/QXVnLTI2LTIwMjIgMTMtNTQtMTEuZ2lm" alt="">
+<center> <img width=70% border-width=3px src="https://content.pstmn.io/75b06b8c-0c05-4eb5-97f8-232f135f5508/QXVnLTI2LTIwMjIgMTMtNTQtMTEuZ2lm" alt="">
+
+<img width=70% border-width=3px src=https://user-images.githubusercontent.com/60015240/191787830-9ac86159-3ebb-452f-9e88-9b3c80634d49.png> </center>
 
 # Use Cases
 Select the `Run in Postman` button to run a collection which contains all of the use cases below in order to see their documentation within Postman and practice making API calls to the Twitter API.
@@ -69,6 +73,6 @@ Select the `Run in Postman` button to run a collection which contains all of the
 
 If you're a student or educator learning or teaching APIs, the Postman student program provides training, resources, and opportunities to support and amplify your projects.
 
-Find out more about Postman Student Programs [here](https://www.postman.com/student-program/) and fork our Student Expert training collection [here](https://www.postman.com/postman/workspace/postman-student-program).
+Find out more about Postman Student Programs [here](https://www.postman.com/student-program/) and check out our Student Expert training [here](https://www.postman.com/student-program/#student-expert-program).
 
-<img width="560" alt="Student (2)" src="https://user-images.githubusercontent.com/60015240/191765935-22599ee6-c1c5-4652-bdd9-96592a0f6879.png">
+<center><img width="40%" alt="Student (2)" src="https://user-images.githubusercontent.com/60015240/191765935-22599ee6-c1c5-4652-bdd9-96592a0f6879.png"></center>
