@@ -14,24 +14,25 @@ Let us look at setting up Authorization and explore some use cases below, to lea
 
 # Setting up
 ## Fork the Postman Learning Modules collection using the Run in Postman button
+In order to follow the learning module, please fork the `Twitter Academic Research API course - Postman modules` collection by selecting the **Run in Postman** button below.
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21506762-d6778526-c8a7-4a88-8f01-da54d4926c05?action=collection%2Ffork&collection-url=entityId%3D21506762-d6778526-c8a7-4a88-8f01-da54d4926c05%26entityType%3Dcollection%26workspaceId%3D3f93788b-6ab4-48ea-ae1f-7ee642de36b9)
 
-## Fork the Twitter API V2 public collection for reference
-In order to follow along, please fork the Twitter API V2 [collection](https://www.postman.com/twitter/workspace/twitter-s-public-workspace/collection/9956214-784efcda-ed4c-4491-a4c0-a26470a67400?action=share&creator=21506762) into your own workspace.
-
-To accomplish a successful fork in Postman, select the horizontal ellipses (or [Meatballs](https://uxplanet.org/choose-correct-menu-icon-for-your-navigation-7ffc22df80ac)) menu on the collection, select **Create a Fork**, and provide details about the destination workspace.
+If you prefer to fork directly from the Postman app, you can accomplish a successful fork by selecting the horizontal ellipses (or [Meatballs](https://uxplanet.org/choose-correct-menu-icon-for-your-navigation-7ffc22df80ac)) menu on the collection, select **Create a Fork**, and provide details about the destination workspace.
 
 For more information on Forking in Postman, see our [learning center documentation](https://learning.postman.com/docs/collaborating-in-postman/version-control/#forking-postman-entities).
+
+If you would like to fork the Twitter API V2 collection for reference, you can do so at this [link](https://www.postman.com/twitter/workspace/twitter-s-public-workspace/collection/9956214-784efcda-ed4c-4491-a4c0-a26470a67400?action=share&creator=21506762).
 
 <p align="center"> <img width=70% border-width=3px border-color="black" src=https://user-images.githubusercontent.com/60015240/187228316-b96f5316-3dad-4b9d-9c34-d219a5959396.gif> </p>
 
 ## Set up Authorization 
 
-You have the option to set up Auth at the **Request** or **Collection** level in Postman, based on your needs. In the [Postman collection](https://www.postman.com/the-student-programs-team/workspace/twitter-learning-modules-in-postman/collection/21506762-d6778526-c8a7-4a88-8f01-da54d4926c05?action=share&creator=21506762) which you can fork, authorization is set to Bearer Token at the collection level. Be sure to assign the `{{bearer_token}}` variable in order to authorize the requests within the collection. 
+For these learning modules, you will set up authorization at the **Collection** level in Postman. In the [Postman collection](https://www.postman.com/the-student-programs-team/workspace/twitter-learning-modules-in-postman/collection/21506762-d6778526-c8a7-4a88-8f01-da54d4926c05?action=share&creator=21506762) which you have forked (either through the Run in Postman button or manually), authorization is set to Bearer Token at the collection level. Be sure to assign the `{{bearer_token}}` variable in order to authorize the requests within the collection. 
 
 ### Bearer Token
 
-For some Twitter API V2 endpoints, a Bearer Token is all that's needed and will be provided to developers who have set up a project and app in Twitter's [developer portal](developer.twitter.com). In this case, you can set Authorization at the collection level to Bearer Token and insert the token provided by twitter by hard-coding it where you see `{{bearer_token}}` or by assigning the `bearer_token` variable in the Variables tab at the same collection level. 
+For some Twitter API V2 endpoints, a Bearer Token is all that's needed and will be provided to developers who have set up a project and app in Twitter's [developer portal](developer.twitter.com). In this case, you can insert the token provided by twitter by hard-coding it where you see `{{bearer_token}}` or by assigning the `bearer_token` variable in the **Variables** tab at the same collection level. 
 
 <p align="center"> <img width=70% border-width=3px border-color="black" src="https://content.pstmn.io/75b06b8c-0c05-4eb5-97f8-232f135f5508/QXVnLTI2LTIwMjIgMTMtNTQtMTEuZ2lm" alt=""> </p>
 
@@ -69,7 +70,7 @@ Select the `Run in Postman` button to run a collection which contains all of the
 >13. "I want to keep my dataset compliant."
 
 
-# Learn more and get certified through Postman Student Programs
+# Get API certified through Postman Student Programs
 
 If you're a student or educator learning or teaching APIs, the Postman student program provides training, resources, and opportunities to support and amplify your projects.
 
