@@ -32,7 +32,7 @@ If you want to process data from the filtered stream endpoint and store the Twee
 
 When you are using the Twitter API, you should ensure that you are complying with the [Twitter developer policy](https://developer.twitter.com/en/developer-terms/policy). If you store Twitter data offline, you must keep it up to date with the current state of that content on Twitter. Specifically, you must delete or modify any content in your dataset if it is deleted or modified on Twitter.
 
-One way academics can do this is by periodically calling the [Tweet lookup endpoint](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/introduction), with a list of Tweet IDs (upto 100 per request) from their datasets. If a Tweet has been deleted or was posted from a now- suspended or private account, the API response will indicate that and you should delete that Tweet (JSON) from your dataset. An example of this is shown in the labs in module 6 above.
+One way academics can do this is by periodically calling the [Tweet lookup endpoint](https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/introduction), with a list of Tweet IDs (up to 100 per request) from their datasets. If a Tweet has been deleted or was posted from a now- suspended or private account, the API response will indicate that and you should delete that Tweet (JSON) from your dataset. An example of this is shown in the labs in module 6 above.
 
 ## Sharing Tweet IDs for peer-review
 
